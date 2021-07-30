@@ -1,5 +1,3 @@
-// Recursion Assignment1 - (evaluate)
-
 import Foundation
 
 func evaluate(_ expr: String) -> Int {
