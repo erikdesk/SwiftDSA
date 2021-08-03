@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EFD6B03026B39D1800EBF0ED /* CrawlMiniProject1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */; };
+		EFF3A36A26B85A8800C9A3A7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF3A36826B85A8700C9A3A7 /* Board.swift */; };
+		EFF3A36B26B85A8800C9A3A7 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF3A36926B85A8800C9A3A7 /* QueensSolver.swift */; };
 		EFFAC01D26B0A8DD0099F93C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFAC01C26B0A8DD0099F93C /* main.swift */; };
 		EFFAC02426B0A9540099F93C /* RecursionAssignment1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFAC02326B0A9540099F93C /* RecursionAssignment1.swift */; };
 		EFFAC02726B0A9AF0099F93C /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFAC02626B0A9AF0099F93C /* String+DPStringTool.swift */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlMiniProject1.swift; sourceTree = "<group>"; };
+		EFF3A36826B85A8700C9A3A7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		EFF3A36926B85A8800C9A3A7 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		EFFAC01926B0A8DD0099F93C /* SwiftDSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDSA; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFAC01C26B0A8DD0099F93C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EFFAC02326B0A9540099F93C /* RecursionAssignment1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursionAssignment1.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 			children = (
 				EFFAC02326B0A9540099F93C /* RecursionAssignment1.swift */,
 				EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */,
+				EFF3A36826B85A8700C9A3A7 /* Board.swift */,
+				EFF3A36926B85A8800C9A3A7 /* QueensSolver.swift */,
 				EFFAC01C26B0A8DD0099F93C /* main.swift */,
 			);
 			path = SwiftDSA;
@@ -138,8 +144,10 @@
 			files = (
 				EFD6B03026B39D1800EBF0ED /* CrawlMiniProject1.swift in Sources */,
 				EFFAC02726B0A9AF0099F93C /* String+DPStringTool.swift in Sources */,
+				EFF3A36A26B85A8800C9A3A7 /* Board.swift in Sources */,
 				EFFAC01D26B0A8DD0099F93C /* main.swift in Sources */,
 				EFFAC02426B0A9540099F93C /* RecursionAssignment1.swift in Sources */,
+				EFF3A36B26B85A8800C9A3A7 /* QueensSolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
