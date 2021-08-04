@@ -15,3 +15,8 @@ crawl("/Users/erikdesk/Downloads/test/")
 var board = Board(size: 8);
 solveQueens(board: &board)
 
+/// QuickSort
+var arr = [6, 10, 8, 2, 3, 2, 9, 0, 1, 7]
+//var arr = [2, 4, 9]
+quickSort(&arr, 0, arr.count - 1)
+print(arr)
