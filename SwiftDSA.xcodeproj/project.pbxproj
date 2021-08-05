@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0414F826BB49B000AD7B87 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0414F726BB49AF00AD7B87 /* QuickSort.swift */; };
+		EF0414FA26BC885700AD7B87 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0414F926BC885700AD7B87 /* Stack.swift */; };
+		EF0414FC26BC885E00AD7B87 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0414FB26BC885E00AD7B87 /* Queue.swift */; };
 		EFD6B03026B39D1800EBF0ED /* CrawlMiniProject1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */; };
-		EFE410BE26BA0CC300904B98 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE410BD26BA0CC300904B98 /* QuickSort.swift */; };
 		EFF3A36A26B85A8800C9A3A7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF3A36826B85A8700C9A3A7 /* Board.swift */; };
 		EFF3A36B26B85A8800C9A3A7 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF3A36926B85A8800C9A3A7 /* QueensSolver.swift */; };
 		EFFAC01D26B0A8DD0099F93C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFAC01C26B0A8DD0099F93C /* main.swift */; };
@@ -29,8 +31,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF0414F726BB49AF00AD7B87 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		EF0414F926BC885700AD7B87 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		EF0414FB26BC885E00AD7B87 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlMiniProject1.swift; sourceTree = "<group>"; };
-		EFE410BD26BA0CC300904B98 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		EFF3A36826B85A8700C9A3A7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		EFF3A36926B85A8800C9A3A7 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		EFFAC01926B0A8DD0099F93C /* SwiftDSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDSA; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +78,9 @@
 				EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */,
 				EFF3A36826B85A8700C9A3A7 /* Board.swift */,
 				EFF3A36926B85A8800C9A3A7 /* QueensSolver.swift */,
-				EFE410BD26BA0CC300904B98 /* QuickSort.swift */,
+				EF0414F726BB49AF00AD7B87 /* QuickSort.swift */,
+				EF0414F926BC885700AD7B87 /* Stack.swift */,
+				EF0414FB26BC885E00AD7B87 /* Queue.swift */,
 				EFFAC01C26B0A8DD0099F93C /* main.swift */,
 			);
 			path = SwiftDSA;
@@ -147,10 +153,12 @@
 			files = (
 				EFD6B03026B39D1800EBF0ED /* CrawlMiniProject1.swift in Sources */,
 				EFFAC02726B0A9AF0099F93C /* String+DPStringTool.swift in Sources */,
-				EFE410BE26BA0CC300904B98 /* QuickSort.swift in Sources */,
+				EF0414F826BB49B000AD7B87 /* QuickSort.swift in Sources */,
 				EFF3A36A26B85A8800C9A3A7 /* Board.swift in Sources */,
+				EF0414FA26BC885700AD7B87 /* Stack.swift in Sources */,
 				EFFAC01D26B0A8DD0099F93C /* main.swift in Sources */,
 				EFFAC02426B0A9540099F93C /* RecursionAssignment1.swift in Sources */,
+				EF0414FC26BC885E00AD7B87 /* Queue.swift in Sources */,
 				EFF3A36B26B85A8800C9A3A7 /* QueensSolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
