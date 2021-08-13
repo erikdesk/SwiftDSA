@@ -13,7 +13,10 @@ public final class Queue<E>: Sequence {
     }
     
     /// Front item in queue.
-    private var front: Node<E>? = nil
+    private var first: Node<E>? = nil
+    
+    /// Back item in queue.
+    private var last: Node<E>? = nil
     
     /// Number of items in queue.
     private(set) var count: Int = 0
@@ -24,47 +27,66 @@ public final class Queue<E>: Sequence {
     /// Is the queue empty?
     /// - Returns: Returns true if queue is empty, otherwise false.
     public func isEmpty() -> Bool {
-        return front == nil
+        return first == nil
     }
     
     /// Add an item to the back of the queue.
     /// - Parameter item: The item to be added to the queue.
     public func enqueue(item: E) {
-        if isEmpty() {
-            front = Node<E>(item: item, next: nil)
-            return
-        }
         
-        var current: Node<E>? = front
-        while current?.next != nil {
-            current = current?.next
-        }
-        
-        current?.next = Node<E>(item: item, next: nil)
+        // MARK: Updated based on class solution.
+        let oldLast = last
+        last = Node<E>(item: item)
+        if isEmpty() { first = last }
+        else { oldLast?.next = last }
         count += 1
+        
+        // MARK: Submitted Assignment.
+        //if isEmpty() {
+        //    first = Node<E>(item: item, next: nil)
+        //    return
+        //}
+        //
+        //var current: Node<E>? = first
+        //while current?.next != nil {
+        //    current = current?.next
+        //}
+        //
+        //current?.next = Node<E>(item: item, next: nil)
+        //count += 1
     }
     
     /// Removes and returns the item least recently added to the stack.
     /// - Returns: Returns the item least recently added to the stack, nil if queue is empty.
     public func dequeue() -> E? {
-        if let oldFront = front {
-            front = front?.next
+        
+        // MARK: Updated based on class solution.
+        if let item = first?.item {
+            first = first?.next
             count -= 1
-            return oldFront.item
+            if isEmpty() { last = nil }
+            return item
         }
-        return nil // Alternatively can THROW error if empty, instead of Optional.
+        return nil
+        
+        // MARK: Submitted Assignment.
+        //if let oldFront = first {
+        //    first = first?.next
+        //    count -= 1
+        //    return oldFront.item
+        //}
+        //return nil // Alternatively can THROW error if empty, instead of Optional.
     }
 
     /// Returns (but does not remove) the item least recently added to the stack.
     /// - Returns: Returns the item least recently added to the stack.
     public func peek() -> E? {
-        return front?.item
+        return first?.item
         // return nil // Alternatively can THROW error if empty, instead of Optional.
     }
 
     /// Iterates through items in the stack from the top towards the bottom.
     public struct QueueIterator<E>: IteratorProtocol {
-        public typealias Element = E
 
         private var current: Node<E>?
 
@@ -79,12 +101,15 @@ public final class Queue<E>: Sequence {
             }
             return nil
         }
+        
+        // MARK: can put at bottom too.
+        public typealias Element = E
     }
 
     /// Makes an iterator that iterates over the items in the stack.
     /// - Returns: Returns an iterator that iterates over the items in the stack.
     public func makeIterator() -> QueueIterator<E> {
-        return QueueIterator<E>(front)
+        return QueueIterator<E>(first)
     }
 }
 

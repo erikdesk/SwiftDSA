@@ -15,7 +15,7 @@ extension String {
             self = self.replacingCharacters(in: startIndex..<self.index(after: startIndex), with: newValue)
         }
     }
-    
+
     subscript(start: Int, end: Int) -> String {
         get {
             let startIndex = self.index(self.startIndex, offsetBy: start)

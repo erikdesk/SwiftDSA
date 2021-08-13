@@ -10,6 +10,10 @@
 		EF0414F826BB49B000AD7B87 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0414F726BB49AF00AD7B87 /* QuickSort.swift */; };
 		EF0414FA26BC885700AD7B87 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0414F926BC885700AD7B87 /* Stack.swift */; };
 		EF0414FC26BC885E00AD7B87 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0414FB26BC885E00AD7B87 /* Queue.swift */; };
+		EF16695926C6008900C6071A /* ProblemSet3WhosMyParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16695826C6008900C6071A /* ProblemSet3WhosMyParent.swift */; };
+		EF75FE9126C3503700B1556C /* ProblemSet2GraphCyclicPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FE9026C3503700B1556C /* ProblemSet2GraphCyclicPermutation.swift */; };
+		EF75FE9326C458F900B1556C /* ProblemSet2GraphRepeatingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FE9226C458F900B1556C /* ProblemSet2GraphRepeatingSequence.swift */; };
+		EF75FE9526C5C8DC00B1556C /* ProblemSet5LCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FE9426C5C8DC00B1556C /* ProblemSet5LCA.swift */; };
 		EF98229926BF2E27002D541A /* GroupPresentationKMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98229826BF2E27002D541A /* GroupPresentationKMP.swift */; };
 		EFD6B03026B39D1800EBF0ED /* CrawlMiniProject1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */; };
 		EFF3A36A26B85A8800C9A3A7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF3A36826B85A8700C9A3A7 /* Board.swift */; };
@@ -35,6 +39,10 @@
 		EF0414F726BB49AF00AD7B87 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		EF0414F926BC885700AD7B87 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		EF0414FB26BC885E00AD7B87 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		EF16695826C6008900C6071A /* ProblemSet3WhosMyParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSet3WhosMyParent.swift; sourceTree = "<group>"; };
+		EF75FE9026C3503700B1556C /* ProblemSet2GraphCyclicPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSet2GraphCyclicPermutation.swift; sourceTree = "<group>"; };
+		EF75FE9226C458F900B1556C /* ProblemSet2GraphRepeatingSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSet2GraphRepeatingSequence.swift; sourceTree = "<group>"; };
+		EF75FE9426C5C8DC00B1556C /* ProblemSet5LCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSet5LCA.swift; sourceTree = "<group>"; };
 		EF98229826BF2E27002D541A /* GroupPresentationKMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPresentationKMP.swift; sourceTree = "<group>"; };
 		EFD6B02F26B39D1800EBF0ED /* CrawlMiniProject1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlMiniProject1.swift; sourceTree = "<group>"; };
 		EFF3A36826B85A8700C9A3A7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 				EF0414F926BC885700AD7B87 /* Stack.swift */,
 				EF0414FB26BC885E00AD7B87 /* Queue.swift */,
 				EF98229826BF2E27002D541A /* GroupPresentationKMP.swift */,
+				EF75FE9026C3503700B1556C /* ProblemSet2GraphCyclicPermutation.swift */,
+				EF75FE9226C458F900B1556C /* ProblemSet2GraphRepeatingSequence.swift */,
+				EF16695826C6008900C6071A /* ProblemSet3WhosMyParent.swift */,
+				EF75FE9426C5C8DC00B1556C /* ProblemSet5LCA.swift */,
 				EFFAC01C26B0A8DD0099F93C /* main.swift */,
 			);
 			path = SwiftDSA;
@@ -155,15 +167,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD6B03026B39D1800EBF0ED /* CrawlMiniProject1.swift in Sources */,
+				EF16695926C6008900C6071A /* ProblemSet3WhosMyParent.swift in Sources */,
+				EF75FE9126C3503700B1556C /* ProblemSet2GraphCyclicPermutation.swift in Sources */,
 				EFFAC02726B0A9AF0099F93C /* String+DPStringTool.swift in Sources */,
 				EF98229926BF2E27002D541A /* GroupPresentationKMP.swift in Sources */,
 				EF0414F826BB49B000AD7B87 /* QuickSort.swift in Sources */,
 				EFF3A36A26B85A8800C9A3A7 /* Board.swift in Sources */,
 				EF0414FA26BC885700AD7B87 /* Stack.swift in Sources */,
+				EF75FE9526C5C8DC00B1556C /* ProblemSet5LCA.swift in Sources */,
 				EFFAC01D26B0A8DD0099F93C /* main.swift in Sources */,
 				EFFAC02426B0A9540099F93C /* RecursionAssignment1.swift in Sources */,
 				EF0414FC26BC885E00AD7B87 /* Queue.swift in Sources */,
 				EFF3A36B26B85A8800C9A3A7 /* QueensSolver.swift in Sources */,
+				EF75FE9326C458F900B1556C /* ProblemSet2GraphRepeatingSequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

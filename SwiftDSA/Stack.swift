@@ -13,7 +13,7 @@ public final class Stack<E>: Sequence {
     }
     
     /// Top item in stack.
-    private var top: Node<E>? = nil
+    private var first: Node<E>? = nil
     
     /// Number of items in stack.
     private(set) var count: Int = 0
@@ -24,24 +24,24 @@ public final class Stack<E>: Sequence {
     /// Is the stack empty?
     /// - Returns: Returns true if stack is empty, otherwise false.
     public func isEmpty() -> Bool {
-        return top == nil
+        return first == nil
     }
     
     /// Add an item to the top of the stack.
     /// - Parameter item: The item to be added to the stack.
     public func push(item: E) {
-        let oldTop = top
-        top = Node<E>(item: item, next: oldTop)
+        let oldFirst = first
+        first = Node<E>(item: item, next: oldFirst)
         count += 1
     }
     
     /// Removes and returns the item most recently added to the stack.
     /// - Returns: Returns the item most recently added to the stack, nil if stack is empty.
     public func pop() -> E? {
-        if let oldTop = top {
-            top = top?.next
+        if let item = first?.item {
+            first = first?.next
             count -= 1
-            return oldTop.item
+            return item
         }
         return nil // Alternatively can THROW error if empty, instead of Optional.
     }
@@ -49,13 +49,12 @@ public final class Stack<E>: Sequence {
     /// Returns (but does not remove) the item most recently added to the stack.
     /// - Returns: Returns the item most recently added to the stack.
     public func peek() -> E? {
-        return top?.item
+        return first?.item
         // return nil // Alternatively can THROW error if empty, instead of Optional.
     }
     
     /// Iterates through items in the stack from the top towards the bottom.
     public struct StackIterator<E>: IteratorProtocol {
-        public typealias Element = E
 
         private var current: Node<E>?
         
@@ -70,12 +69,15 @@ public final class Stack<E>: Sequence {
             }
             return nil
         }
+        
+        // MARK: can put at the bottom!
+        public typealias Element = E
     }
 
     /// Makes an iterator that iterates over the items in the stack.
     /// - Returns: Returns an iterator that iterates over the items in the stack.
     public func makeIterator() -> StackIterator<E> {
-        return StackIterator<E>(top)
+        return StackIterator<E>(first)
     }
 }
 
